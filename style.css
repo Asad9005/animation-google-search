@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f3ff;
+}
+.searchBox{
+    border-radius: 55px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    background: #f0f3ff;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.1),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.gIcon{
+    width: 50px;
+    cursor: pointer;
+}
+.mic-icon{
+    width: 0px;
+    cursor: pointer;
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+input{
+    width: 0px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    background: transparent;
+    transition: 1s;
+}
+.active input {
+        width: 500px;
+        padding: 12px 20px;
+}
+.active .mic-icon{
+    width: 30px;
+}
